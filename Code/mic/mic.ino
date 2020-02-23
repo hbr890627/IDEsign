@@ -1,22 +1,22 @@
-int micAinput=3;
-int micDinput=4;
+int micA=3;
+int micD=4;
 int value;
 
 
 void setup() {
-  pinMode(micAinput,INPUT);
-  pinMode(micDinput,INPUT);
+  pinMode(micA,OUTPUT);
+  pinMode(micD,OUTPUT);
 }
 
 void loop() {
-  value=analogRead(micAinput);
+  value=analogRead(micA);
   if(value>500){
     digitalWrite(13,HIGH); 
   }else{
     digitalWrite(13,LOW);
   }
   
-  if(digitalRead(micDinput==HIGH)){
+  if(digitalRead(micD==HIGH)){
     digitalWrite(13,HIGH);
   }else{
     digitalWrite(13,LOW);

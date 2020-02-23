@@ -1,5 +1,5 @@
 int trig=12;
-int echo=13;
+int echo=11;
 int distance;
 
 long get_distance() {
