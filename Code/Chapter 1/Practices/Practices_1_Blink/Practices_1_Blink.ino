@@ -1,5 +1,5 @@
 /*IDEsing 1th Chapter 1 Practices_1_Blink.ino */
-//我是註解123
+//我是註解
 
 /*
 我是註解
