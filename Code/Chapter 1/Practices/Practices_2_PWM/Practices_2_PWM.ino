@@ -12,4 +12,20 @@ void loop() {
     analogWrite(9,value);
     delay(10);
   }
+  for(value=0 ; value<255 ; value+=10){
+    analogWrite(10,value);
+    delay(10);
+  }
+  for(value=255 ; value>0 ; value-=10){
+    analogWrite(10,value);
+    delay(10);
+  }
+  for(value=0 ; value<255 ; value+=10){
+    analogWrite(11,value);
+    delay(10);
+  }
+  for(value=255 ; value>0 ; value-=10){
+    analogWrite(11,value);
+    delay(10);
+  }
 }
