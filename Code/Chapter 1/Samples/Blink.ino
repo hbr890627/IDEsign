@@ -6,13 +6,15 @@
 我是註解
 */
 
+int ledpin=13;
+
 void setup() {
-  pinMode(13, OUTPUT);
+  pinMode(ledpin, OUTPUT);
 }
 
 void loop() {
-  digitalWrite(13, HIGH);
+  digitalWrite(ledpin, HIGH);
   delay(1000);
-  digitalWrite(13, LOW);
+  digitalWrite(ledpin, LOW);
   delay(1000);
 }
