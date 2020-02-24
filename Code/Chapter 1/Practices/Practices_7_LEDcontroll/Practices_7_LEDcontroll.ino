@@ -17,8 +17,8 @@ void loop(){
   if(digitalRead(RPin)==HIGH){
     if(Rstate==0){
       value+=10;
-      if(value>=255){
-         value=255; 
+      if(value>=50){
+         value=50; 
       }
       Rstate=1;
     }
@@ -27,7 +27,7 @@ void loop(){
   }
   if(digitalRead(LPin)==HIGH){
     if(Lstate==0){
-      value-=10;
+      value-=20;
       if(value<=0){
         value=0; 
       }
@@ -37,4 +37,5 @@ void loop(){
     Lstate=0;
   }
   Serial.println(value);
+  //Serial.println(digitalRead());
 }

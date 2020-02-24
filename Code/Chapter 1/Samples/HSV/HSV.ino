@@ -7,7 +7,7 @@ void setup() {
 }
 
 void loop() {
-  hue=360;       //H值 0~360度色盤
+  hue=360;      //H值 0~360度色盤
   saturation=1; //S值 飽和度
   value=1;      //V值 明度
   setColor( hue, saturation, value);
