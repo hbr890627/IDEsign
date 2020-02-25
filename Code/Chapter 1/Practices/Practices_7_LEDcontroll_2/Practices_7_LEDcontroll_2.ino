@@ -18,20 +18,29 @@ void loop(){
 
   //右邊按鈕
   if(digitalRead(RPin)==HIGH){  //如果按下右邊按鈕
-    value+=10;
-    if(value>=200){
-      value=200;
+    if(Rstate==0){  //如果R按鈕狀態是off
+      Rstate=1; //狀態變為on
+      value+=10; //亮度加10
+      if(value>=50){ //避免太亮
+         value=50; 
+      }
     }
+  }else{ //如果放開右邊按鈕
+    Rstate=0; //R按鈕狀態變為off
   }
 
   //左邊按鈕
   if(digitalRead(LPin)==HIGH){
-    value-=10;
-    if(value<=0){
-      value=0;
+    if(Lstate==0){
+      value-=10;
+      if(value<=0){
+        value=0; 
+      }
+      Lstate=1;
     }
+  }else{
+    Lstate=0;
   }
-  delay(200);
   
   Serial.println(value);
 }
