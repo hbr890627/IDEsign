@@ -1,24 +1,16 @@
-int micA=3;
-int micD=4;
-int value;
-
-
-void setup() {
-  pinMode(micA,OUTPUT);
-  pinMode(micD,OUTPUT);
+void setup(){
+  Serial.begin(9600);
+  pinMode(A0,INPUT);
 }
 
-void loop() {
-  value=analogRead(micA);
-  if(value>500){
-    digitalWrite(13,HIGH); 
-  }else{
-    digitalWrite(13,LOW);
-  }
-  
-  if(digitalRead(micD==HIGH)){
-    digitalWrite(13,HIGH);
-  }else{
-    digitalWrite(13,LOW);
-  }
+int miv_pre, mic, b;
+
+void loop(){
+  mic=analogRead(A0);
+  b += abs(mic - mic_pre);
+  Serial.print(mic-500);
+  Serial.print(",");
+  Serial.println(b);
+  b *=0.9;
+  mic_pre=mic;
 }
