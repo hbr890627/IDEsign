@@ -1,7 +1,3 @@
-int redPin = 11;
-int greenPin = 10;
-int bluePin = 9;
-
 float col[3];
 float hue = 0.0;
 float saturation=0;
