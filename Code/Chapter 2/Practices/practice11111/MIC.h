@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 86f903891bebbbbd3ba7505d677e2be56ae2c1b8
 int mic_pre, mic, b;
 int mic_sensor(int pin){
-  mic=analogRead(14);
+  mic=analogRead(pin);
   b += abs(mic - mic_pre);
   //Serial.print(mic-500);
   //Serial.print(",");

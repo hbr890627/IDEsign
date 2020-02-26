@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 86f903891bebbbbd3ba7505d677e2be56ae2c1b8
 int mic_pre, mic, b;
 int mic_sensor(int pin){
   mic=analogRead(14);
