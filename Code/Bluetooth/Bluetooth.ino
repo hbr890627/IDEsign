@@ -1,6 +1,6 @@
 #include <SoftwareSerial.h>
 
-SoftwareSerial BTSerial(0,1); //RX/TX
+SoftwareSerial BTSerial(10,11); //RX/TX
 
 int analogPin=14;
 
@@ -25,6 +25,9 @@ void setup() {
 }
 
 void loop(){
+  if(Serial.available()){
+    BTSerial.write(Serial.read());
+  }
   if(BTSerial.available()>0){ //BTSerial
     a=BTSerial.read();
     b+=a;
