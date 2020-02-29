@@ -1,4 +1,4 @@
-int read;
+int Read;
 
 void setup()
 {
@@ -7,6 +7,6 @@ void setup()
 
 void loop()
 {
-  read=analogRead(A0);
+  Read=analogRead(A0);
   Serial.println(read);
 }

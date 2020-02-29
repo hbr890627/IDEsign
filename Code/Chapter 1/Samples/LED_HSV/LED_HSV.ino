@@ -1,12 +1,14 @@
 #include "HSV.h"
 
+//宣告腳位
+int rPin = 11;
+int gPin = 10;
+int bPin = 9;
+
 void setup() {
-  int redPin = 11;
-  int greenPin = 10;
-  int bluePin = 9;
-  pinMode(redPin, OUTPUT);
-  pinMode(greenPin, OUTPUT);
-  pinMode(bluePin, OUTPUT);
+  setRedPin(rPin);  //設定R腳位
+  setGreenPin(gPin);//設定G腳位
+  setBluePin(bPin); //設定B腳位
 }
 
 void loop() {
@@ -14,8 +16,4 @@ void loop() {
   saturation=1; //S值 飽和度
   value=1;      //V值 明度
   setColor( hue, saturation, value); //使用此行程式碼來更改顏色
-  /* 彩色更改範例
-  delay(50);
-  hue += 10;
-  if (hue >= 360) hue = 0.0;*/
 }

@@ -3,10 +3,26 @@ float hue = 0.0;
 float saturation=0;
 float value=0;
 
+int HSVredPin = 11;
+int HSVgreenPin = 10;
+int HSVbluePin = 9;
+
+void setRedPin(int i){
+   HSVredPin=i;
+   pinMode(i,OUTPUT);
+}
+void setGreenPin(int i){
+   HSVgreenPin=i;
+   pinMode(i,OUTPUT);
+}
+void setBluePin(int i){
+   HSVbluePin=i;
+   pinMode(i,OUTPUT);
+}
 void setColor1(float *rgb) {
-  analogWrite(redPin, ((1.0 - rgb[0]) * 255));
-  analogWrite(greenPin, ((1.0 - rgb[1]) * 255));
-  analogWrite(bluePin, ((1.0 - rgb[2]) * 255));  
+  analogWrite(HSVredPin, ((1.0 - rgb[0]) * 255));
+  analogWrite(HSVgreenPin, ((1.0 - rgb[1]) * 255));
+  analogWrite(HSVbluePin, ((1.0 - rgb[2]) * 255));  
 }
 float fract(float x) { return x - int(x); }
 float mix(float a, float b, float t) { return a + (b - a) * t; }
