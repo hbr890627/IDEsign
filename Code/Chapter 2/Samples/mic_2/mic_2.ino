@@ -2,7 +2,7 @@
 
 int mic_pin=A0;
 int sound;
-int led=5;
+int led=3;
 int value;
 
 void setup(){
