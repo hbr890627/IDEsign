@@ -26,4 +26,6 @@ void loop() {
   int abc=function4(7,8);
   Serial.print("變數abc得到了一個回傳值:");
   Serial.println(abc);
+
+  delay(10000);
 }
