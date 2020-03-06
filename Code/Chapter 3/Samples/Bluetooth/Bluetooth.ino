@@ -27,16 +27,12 @@ void loop() {
       c=0;
     }
   }
-  //處理接收到藍芽模組資料
 
   //your code can put under this comment
 
 
-
-
-  
   //your code can put above this comment
-
+  
   BT.flush();
   delay(1);
 }

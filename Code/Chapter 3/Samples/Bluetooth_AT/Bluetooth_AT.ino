@@ -18,5 +18,5 @@ void loop() {
   if (Serial.available()){
     BTSerial.write(Serial.read());
   }
-  
+
 }
