@@ -1,6 +1,7 @@
 int turnOn;
 
 void setup() {
+  pinMode(13,OUTPUT);
   turnOn=true;
   //turnOn=false;
 }
