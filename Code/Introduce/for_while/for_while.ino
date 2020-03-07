@@ -3,18 +3,18 @@ void setup() {
 }
 
 void loop() {
-  int i;
-  for(i=0;i<10;i++){
+  for(int i=0;i<10;i++){
     Serial.print("i=");
     Serial.println(i);
   }
 
   delay(1000);
 
-  int x=0;
+  int x=10;
   while(x>=10){
     Serial.print("x=");
     Serial.println(x);
+    x--;
   }
 
   delay(5000);
