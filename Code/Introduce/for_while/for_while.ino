@@ -11,7 +11,7 @@ void loop() {
   delay(1000);
 
   int x=10;
-  while(x>=10){
+  while(x<=10){
     Serial.print("x=");
     Serial.println(x);
     x--;
