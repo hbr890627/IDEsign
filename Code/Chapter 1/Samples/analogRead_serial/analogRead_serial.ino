@@ -8,5 +8,5 @@ void setup()
 void loop()
 {
   Read=analogRead(A0);
-  Serial.println(read);
+  Serial.println(Read);
 }
