@@ -1,4 +1,4 @@
-int a=1;
+int a=10;
 float b=0.123;
 char c='a';
 String d="hello"
