@@ -10,11 +10,11 @@ void loop() {
 
   delay(1000);
 
-  int x=10;
-  while(x<=10){
+  int x=0;
+  while(x<10){
     Serial.print("x=");
     Serial.println(x);
-    x--;
+    x++;
   }
 
   delay(5000);
