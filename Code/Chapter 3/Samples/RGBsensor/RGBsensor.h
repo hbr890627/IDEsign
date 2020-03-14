@@ -19,8 +19,6 @@ String RGBsensor(int rpin,int gpin,int bpin,int spin){
   delay(10);
   analogWrite(gpin,0);
   
-
-  
   //BLUE
   analogWrite(bpin,70);
   delay(10);
@@ -28,7 +26,6 @@ String RGBsensor(int rpin,int gpin,int bpin,int spin){
   delay(10);
   analogWrite(bpin,0);
   
-
   delay(10);
   light=analogRead(spin)*0.2+light*0.8;
   ro=0.9*map(light-r,0,1023,0,4000);
@@ -69,6 +66,5 @@ String RGBsensor(int rpin,int gpin,int bpin,int spin){
   }
   if(true){
     return("e04");
-  }
-  
+  } 
 }

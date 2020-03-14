@@ -12,7 +12,7 @@ void setup() {
 void loop() {
   // 若收到藍牙模組的資料，則送到「序列埠監控視窗」
   if (BTSerial.available()){
-    Serial.println(BTSerial.read());
+    Serial.write(BTSerial.read());
   }
   // 若收到「序列埠監控視窗」的資料，則送到藍牙模組
   if (Serial.available()){

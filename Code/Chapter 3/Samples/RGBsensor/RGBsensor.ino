@@ -1,4 +1,4 @@
-#include "RGB.h"
+#include "RGBsensor.h"
 int red_pin=3;
 int green_pin=5;
 int blue_pin=6;
