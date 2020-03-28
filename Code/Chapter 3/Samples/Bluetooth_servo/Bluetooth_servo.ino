@@ -33,7 +33,8 @@ void loop() {
   }
 
   //your code can put under this comment
-  if(data>0&&data<180){
+  if(data>0&&data<100){
+    data=map(data,0,100,0,180);
     myservo.write(data);
   }
 

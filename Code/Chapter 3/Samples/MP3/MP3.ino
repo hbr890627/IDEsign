@@ -1,13 +1,15 @@
-int powerPin=3;
+int powerPin=4;
 void setup() {
+  Serial.begin(9600);
   pinMode(powerPin,OUTPUT);
 }
 
 void loop() {
   if(Serial.available()){
-    if(Serial.read()==1){
+    char a=Serial.read();
+    if(a=='1'){
       digitalWrite(powerPin,HIGH);
-    }else if(Serial.read()==0){
+    }else if(a=='0'){
       digitalWrite(powerPin,LOW);
     }
   }
